@@ -1,14 +1,14 @@
-import * as React from 'react';
-import { TextInput } from 'react-native-paper';
-import {View,Text,StyleSheet} from "react-native";
+import React from "react";
+import {View, StyleSheet, Button} from "react-native";
 
-
-const Home = () => {
-    const [text, setText] = React.useState('');
+const Home = ({navigation}) => {
     return (
-        <Text> Home </Text>
-    );
-};
+        <View style={style.container}>
+            <Button title={"CitySearch"} onPress={() => navigation.navigate('CitySearch')}/>
+            <Button title={"CountrySearch"} onPress={() => navigation.navigate('CountrySearch')}/>
+        </View>
+    )
+}
 export default Home;
 
 const style = StyleSheet.create({
