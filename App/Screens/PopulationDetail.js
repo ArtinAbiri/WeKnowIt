@@ -1,21 +1,39 @@
 import * as React from 'react';
-import {TextInput} from 'react-native-paper';
-import {View, Text, StyleSheet, Button} from "react-native";
+import {View, Text, StyleSheet, Button, FlatList} from "react-native";
+import {useEffect, useState} from "react";
+import {getCityPopulation} from "../Api/ApiDataFetch.js";
+import async from "async";
 
 
-const PopulationDetail = ({navigation}) => {
+const PopulationDetail = ({navigation, route}) => {
+    const {routeText} = route.params;
+    const [isLoading, setLoading] = useState(true);
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+       getCityPopulation(routeText.toString())
+            .then((response) => {
+                setData(response);
+            })
+            .catch((error) => console.error(error))
+            .finally(() => setLoading(false));
+    }, []);
+
+
     return (
-
-
-        <View style={style.container}>
+        <View style={{flex: 1, padding: 24}}>
             <View style={style.backButton}>
                 <Button title="CityPop" onPress={() => navigation.popToTop()}/>
             </View>
-
-            <Text> PopulationDetail </Text>
-        </View>
-    );
-};
+            {isLoading ? <Text>Loading...</Text> :
+                (<View>
+                        <Text>{data.title}</Text>
+                        <Text>Population:</Text>
+                        <Text>{data}</Text>
+                    </View>
+                )}
+        </View>);
+}
 export default PopulationDetail;
 
 const style = StyleSheet.create({

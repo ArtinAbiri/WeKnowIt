@@ -6,8 +6,7 @@ enableScreens();
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "react-native-screens/native-stack";
 import Home from "./App/Screens/Home";
-import CitySearch from "./App/Screens/CitySearch";
-import CountrySearch from "./App/Screens/CountrySearch";
+import Search from "./App/Screens/Search";
 import PopulationDetail from "./App/Screens/PopulationDetail";
 import CountryCities from "./App/Screens/CountryCities";
 
@@ -20,10 +19,9 @@ export default function App({navigation}) {
     return (
 
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
+            <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}                >
                 <Stack.Screen name="Home" component={Home}/>
-                <Stack.Screen name="CitySearch" component={CitySearch} />
-                <Stack.Screen name="CountrySearch" component={CountrySearch}/>
+                <Stack.Screen name="Search" component={Search} />
                 <Stack.Screen name="PopulationDetail" component={PopulationDetail}/>
                 <Stack.Screen name="CountryCities" component={CountryCities}/>
 
