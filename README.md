@@ -4,9 +4,9 @@ Uppgiften var att utvecka en mobil applikation f√∂r en kund "CityPop". Slut anv√
 Denna aplikation gjordes i [ReactNative Expo](https://expo.dev/). 
 
 ## Struktur
-Main:  `WeKnowIt/citypop/App.js`
-Fetch: `WeKnowIt/citypop/App/Api/`
-Vyer:  `WeKnowIt/citypop/App/Screens/`
+* Main:  `WeKnowIt/citypop/App.js`
+* Fetch: `WeKnowIt/citypop/App/Api/`
+* Vyer:  `WeKnowIt/citypop/App/Screens/`
 
 ### Dependencies
 
