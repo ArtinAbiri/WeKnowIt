@@ -35,6 +35,9 @@ export const getLargestCities = async (routeText: string) => {
 }
 
 export const checkIfCountryValid =  async (routeText: string) =>{
+    if (routeText === "" || routeText.match(/^ *$/) !== null)
+        return false;
+    else
     return getCountryInitials(routeText).then(
         async (response) =>{
             return response !== "Country does not exist";

@@ -19,7 +19,7 @@ export default function App({navigation}) {
     return (
 
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}                >
+            <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}} >
                 <Stack.Screen name="Home" component={Home}/>
                 <Stack.Screen name="Search" component={Search} />
                 <Stack.Screen name="PopulationDetail" component={PopulationDetail}/>
