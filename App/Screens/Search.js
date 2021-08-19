@@ -37,7 +37,7 @@ const Search = ({navigation, route}) => {
             </View>
 
             <View style={{position: 'absolute', top: '30%'}}>
-                <Text style={{fontSize: 45, textAlign:'center'}}>SEARCH BY {'\n'} {searchType.toUpperCase()}</Text>
+                <Text style={{fontSize: 45, textAlign: 'center'}}>SEARCH BY {'\n'} {searchType.toUpperCase()}</Text>
             </View>
 
             <View style={style.textBox}>
@@ -48,13 +48,13 @@ const Search = ({navigation, route}) => {
                     onChangeText={text => setText(text)}
                 />
             </View>
-            <View style={{position: 'absolute',bottom:'38%'}}>
-            <TouchableOpacity activeOpacity={0.5} onPress={handleSearch} style={style.roundButton}>
+            <View style={{position: 'absolute', bottom: '38%'}}>
+                <TouchableOpacity activeOpacity={0.5} onPress={handleSearch} style={style.roundButton}>
 
-                <Image style={style.image}
-                       source={require('../../assets/search.png')}
-                />
-            </TouchableOpacity>
+                    <Image style={style.image}
+                           source={require('../../assets/search.png')}
+                    />
+                </TouchableOpacity>
             </View>
 
         </View>

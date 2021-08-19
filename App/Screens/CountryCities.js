@@ -71,7 +71,7 @@ const style = StyleSheet.create({
     }, buttonCluster: {
         position: 'absolute',
         width: '120%',
-        top:'45%',
+        top: '45%',
         justifyContent: 'center',
         alignItems: 'center'
     }, button: {
