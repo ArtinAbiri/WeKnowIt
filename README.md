@@ -12,7 +12,7 @@ Denna aplikation gjordes i [ReactNative Expo](https://expo.dev/).
 
 * [NodeJS](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads)
-* [Expo phone app(for compiling on iOS without Mac)](https://apps.apple.com/app/apple-store/id982107779)
+* [Expo phone app (for compiling on iOS without Mac)](https://apps.apple.com/app/apple-store/id982107779)
 
 ### Köra programmet
 
