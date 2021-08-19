@@ -16,7 +16,7 @@ Denna aplikation gjordes i [ReactNative Expo](https://expo.dev/).
 
 ### Köra programmet
 
-1. Öppna terminalen och klona projektet med: git clone https://github.com/ArtinAbiri/WeKnowIt.git
+1. Öppna terminalen och klona projektet med: `git clone https://github.com/ArtinAbiri/WeKnowIt.git`
 2. För att navigera dig in i applikationen skriver du `cd WeKnowIt/citypop`
 3. Skriv `expo install` och vänta tills allt är installerat
 4. Skriv `expo start` för att starta klienten som appen körs på
